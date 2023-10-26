@@ -100,3 +100,14 @@
     font-weight: 500;
     color: #5c5e62;
 }
+
+@media (max-width: 600px){
+    .signup__info > h1 {
+        margin-left: 0px;
+    }
+
+    .signup__header{
+        position: relative;
+    }
+
+}

@@ -99,3 +99,11 @@
     font-weight: 500;
     color: #5c5e62;
 }
+
+
+@media (max-width: 600px){
+    .login__header{
+        position: relative;
+    }
+
+}
