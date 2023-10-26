@@ -1,0 +1,102 @@
+.landing{
+    background: url("https://tesla.com/ns_videos/model-3-social.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+}
+
+/* Display grid is the same as saying 
+display flex and flex direction column.
+Place-item center is the same as saying 
+align item center and justify content center */
+
+.landing__info {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+}
+
+.landing__infoText{
+    text-align: center;
+    flex: 1;
+}
+
+/* Flex 1 makes infoText take up most space in info. 
+More spacing in the column direction  */
+
+.landing__infoText > h1{
+    color: #393c41;
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.landing__infoText > h4 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #5c5e62;
+}
+
+.underline{
+    padding-bottom: 4px;
+    padding-top: 15px;
+    border-bottom: 1px solid black;
+    color: #393c41;
+    cursor: pointer;
+}
+
+.underline:hover{
+    border-bottom-width: 2px;
+    color: black;
+}
+
+.landing__actions{
+    margin-top: 330px;
+    display: flex;
+    gap: 20px;
+}
+
+ button{
+    cursor: pointer;
+    border: none;
+    width: 260px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+}
+
+.landing__btnPrimary{
+    background-color: #393c41;
+    color: white;
+    opacity: .9;
+}
+
+.landing__btnSecondary{
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+}
+
+@media (max-width: 750px){
+
+    .landing__actions{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .landing__actions button{
+        margin: 0 auto;
+    }
+}
+

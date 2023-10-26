@@ -1,0 +1,25 @@
+.menu{
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 70px 20px 20px 20px;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 280px;   
+}
+
+/* Hides scrollbar from Chrome, Safari and Opera */
+.menu::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hides scrollbar for IE, Edge and Firefoc */
+.menu{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

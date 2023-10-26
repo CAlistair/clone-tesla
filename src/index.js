@@ -5,6 +5,11 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faXmark, faBars, faMountain  } from "@fortawesome/free-solid-svg-icons";
+
+library.add( faXmark, faBars, faMountain);
+
 
 const container = document.getElementById('root');
 const root = createRoot(container);
